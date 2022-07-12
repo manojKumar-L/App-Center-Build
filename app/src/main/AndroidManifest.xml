@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testingdomain">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestingDomain">
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <data
+                    android:host="testingdomain"
+                    android:scheme="open" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="wplxs.test-app.link"
+                    android:scheme="https" />
+                <data
+                    android:host="wplxs-alternate.test-app.link"
+                    android:scheme="https" />
+                <data
+                    android:host="wikipedia.org"
+                    android:scheme="https"/>
+                <data
+                    android:host="testing-app.link"
+                    android:scheme="https"/>
+                <data
+                    android:host="wikipedeia.org"
+                    android:scheme="https"/>
+                <data
+                    android:host="cname.cuatombranchtest.infinityfreeapp.com"
+                    android:scheme="https" />
+                <data
+                    android:host="6htcc-alternate.test-app.link"
+                    android:scheme="https" />
+                <data
+                    android:host="wikipedia.com"
+                    android:scheme="https"/>
+                <data
+                    android:host="5jfvb.test-app.link"
+                    android:scheme="https"/>
+                <data
+                    android:host="qf97.app.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="io.branch.sdk.TestMode"
+            android:value="true" />
+<!--        <meta-data-->
+<!--            android:name="io.branch.sdk.BranchKey"-->
+<!--            android:value="key_live_ei1sQ6oxbG0KS0s04CSV8aierve6WyRY" />-->
+<!--        <meta-data-->
+<!--            android:name="io.branch.sdk.BranchKey.test"-->
+<!--            android:value="key_test_ocZAH4fviI1SI2r2XHarojhbBvp9Ys2c" />-->
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="@string/branch_live_key" />
+        <meta-data
+            android:name="io.branch.sdk.BranchKey.test"
+            android:value="@string/branch_test_key" />
+    </application>
+
+</manifest>
