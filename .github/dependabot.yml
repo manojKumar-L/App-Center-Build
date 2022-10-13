@@ -10,11 +10,3 @@ version: 2
       interval: weekly
     target-branch: "project-3.6.3-release"
     open-pull-requests-limit: 20
-  
-  
-  - package-ecosystem: gradle
-    directory: ""
-    schedule:
-      interval: weekly
-    target-branch: "project-3.6.3-release"
-    open-pull-requests-limit: 20
