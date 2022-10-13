@@ -4,8 +4,7 @@ updates:
     directory: ""
     schedule:
       interval: weekly
-    target-branch: "main"
-    open-pull-requests-limit: 20
+   
     
      - package-ecosystem: gradle
     # Look for a `Dockerfile` in the `root` directory
