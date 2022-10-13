@@ -1,11 +1,5 @@
 version: 2
-updates:
-  - package-ecosystem: gradle
-    directory: ""
-    schedule:
-      interval: weekly
-   
-    
+updates:   
      - package-ecosystem: gradle
     # Look for a `Dockerfile` in the `root` directory
     directory: "/app"
