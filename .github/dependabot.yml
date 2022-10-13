@@ -6,10 +6,3 @@ updates:
       interval: weekly
     target-branch: "main"
     open-pull-requests-limit: 20
- updates2:
-   - package-ecosystem: gradle
-     directory: "/app"
-     schedule:
-       interval: weekly
-     target-branch: "main"
-     open-pull-requests-limit: 20
