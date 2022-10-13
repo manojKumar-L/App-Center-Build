@@ -4,18 +4,17 @@
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
-updates:
-  - package-ecosystem: gradle
-    directory:"/"
+ - package-ecosystem: gradle
+    directory: "/app"
     schedule:
       interval: weekly
-    target-branch: "main"
+    target-branch: "project-3.6.3-release"
     open-pull-requests-limit: 20
   
   
- - package-ecosystem: gradle
-    directory:"/app"
+  - package-ecosystem: gradle
+    directory: ""
     schedule:
       interval: weekly
-    target-branch: "main"
+    target-branch: "project-3.6.3-release"
     open-pull-requests-limit: 20
