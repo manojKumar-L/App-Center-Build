@@ -4,8 +4,11 @@ updates:
     directory: "/app"
     schedule:
       interval: weekly
+    target-branch: "main"
+    open-pull-requests-limit: 20
    
- - package-ecosystem: gradle
+
+  - package-ecosystem: npm
     directory: ""
     schedule:
       interval: weekly
