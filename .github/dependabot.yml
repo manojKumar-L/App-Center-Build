@@ -1,10 +1,8 @@
 version: 2
-updates:   
-     - package-ecosystem: gradle
-    # Look for a `Dockerfile` in the `root` directory
+updates:
+  - package-ecosystem: gradle
     directory: "/app"
-    # Check for updates once a week
     schedule:
-      interval: "weekly"
+      interval: weekly
     target-branch: "main"
     open-pull-requests-limit: 20
