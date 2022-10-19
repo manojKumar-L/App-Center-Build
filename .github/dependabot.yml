@@ -1,7 +1,15 @@
 version: 2
 updates:
   - package-ecosystem: gradle
-    directory: ""
+    directory: "/app"
+    schedule:
+      interval: weekly
+    target-branch: "main"
+    open-pull-requests-limit: 20
+   
+
+  - package-ecosystem: gradle
+    directory: "/"
     schedule:
       interval: weekly
     target-branch: "main"
